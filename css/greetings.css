@@ -36,9 +36,15 @@
 
 }
 
-.decoration-icon-wrapper {}
+.decoration-icon-wrapper {
+    width: 95px;
+    height: 44px;
+    padding-bottom: 14px;
+}
 
-.decoration_icon {}
+.decoration_icon {
+    width: 100%;
+}
 
 h1 {
     font-family: 'Cormorant Garamond';
@@ -47,6 +53,7 @@ h1 {
     line-height: 78px;
     letter-spacing: 0.4px;
     color: #FFFFFF;
+    padding-bottom: 20px;
 }
 
 .greetings__sub_text {
@@ -56,6 +63,7 @@ h1 {
     line-height: 40px;
     letter-spacing: 0.4px;
     color: #D1B06B;
+    padding-bottom: 28px;
 }
 
 .greetings__button_wrapper {
@@ -90,4 +98,41 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+@media (max-width: 1290px) {
+    h1 {
+        font-size: 40px;
+        line-height: 35px;
+    }
+
+    .greetings__content_photo {
+        padding-bottom: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .greetings__content_photo {
+        padding-bottom: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .greetings__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .greetings__content_photo {
+        padding-bottom: 0;
+    }
+
+    .greetings-photo {
+        position: inherit;
+    }
+
+    .greetings {
+        height: 100%;
+    }
 }
