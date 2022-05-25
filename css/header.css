@@ -1,10 +1,8 @@
 header {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
-    background: url(../img/header/header-background.svg);
-    background-size: cover;
-    opacity: 1;
-    z-index: 2;
 }
 
 .header__container {
@@ -29,7 +27,7 @@ header {
     width: 100%;
 }
 
-.header__button-wrapper {
+.button-wrapper {
     width: 100%;
     max-width: 350px;
     max-height: 85px;
@@ -39,18 +37,21 @@ header {
     padding-bottom: 40px;
 }
 
-.header_button {
-    padding: 24px 71px;
+.button {
     justify-content: center;
     text-align: center;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.1);
     font-family: 'Outfit';
     font-size: 22px;
     line-height: 35px;
     letter-spacing: 0.4px;
     transition: all 0.5s;
     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header_button {
+    padding: 24px 71px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .decoration-line {
@@ -157,14 +158,4 @@ header {
     font-size: 22px;
     line-height: 26px;
     color: #FFFFFF;
-}
-
-.color-filter {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(31, 39, 50, 0.81);
-    z-index: 2;
 }
