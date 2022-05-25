@@ -1,26 +1,9 @@
-.greetings {
-    width: 100%;
-    height: 100vh;
-    background: url(../img/header/header-background.svg);
-    background-size: cover;
-    opacity: 1;
-
-}
-
-.greetings-color-filter {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.greetings_container {
     height: 100%;
-    background: rgba(31, 39, 50, 0.81);
-
 }
 
 .greetings__content {
-    height: calc(100vh - 311px);
-    position: relative;
-    top: 311px;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -33,7 +16,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    z-index: 5;
 }
 
 .decoration-icon-wrapper {
@@ -85,37 +68,24 @@ h1 {
 }
 
 .greetings__content_photo {
-    position: relative;
-    padding-bottom: 70%;
     max-width: 672px;
     max-height: 708px;
+    z-index: 5;
 }
 
 .greetings-photo {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
+
 
 @media (max-width: 1290px) {
     h1 {
         font-size: 40px;
         line-height: 35px;
     }
-
-    .greetings__content_photo {
-        padding-bottom: 90%;
-    }
 }
 
-@media (max-width: 1000px) {
-    .greetings__content_photo {
-        padding-bottom: 100%;
-    }
-}
 
 @media (max-width: 900px) {
     .greetings__content {
@@ -124,15 +94,16 @@ h1 {
         align-items: center;
     }
 
-    .greetings__content_photo {
-        padding-bottom: 0;
+    .greetings__content-text {
+        align-items: center;
     }
 
-    .greetings-photo {
-        position: inherit;
+    .greetings__button_wrapper {
+        justify-content: center;
     }
 
-    .greetings {
-        height: 100%;
+    @media (max-width: 900px) {
+        h1 {
+            text-align: center;
+        }
     }
-}
