@@ -192,6 +192,10 @@
     .header__navigation_title-text {
         display: none;
     }
+
+    .header__navigation_call-mail {
+        gap: 0;
+    }
 }
 
 @media (max-width: 1006px) {
