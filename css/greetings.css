@@ -112,3 +112,61 @@ h1 {
         }
     }
 }
+
+@media (max-height: 805px) {
+    .greetings__content_photo {
+        max-width: 400px;
+        max-height: 600px;
+    }
+}
+
+@media (max-height: 740px) {
+    .greetings__content_photo {
+        max-width: 300px;
+        max-height: 500px;
+        vertical-align: middle;
+        margin: 0 auto;
+    }
+
+    .header__navigation {
+        padding: 10px 0;
+    }
+
+    .greetings__button {
+        padding: 10px 30px;
+    }
+
+    .greetings__content-text {
+        padding-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    .greetings__sub_text {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    .header__container {
+        padding-top: 15px;
+    }
+
+    .button-wrapper {
+        padding-bottom: 10px;
+    }
+
+}
+
+@media (max-height: 740px) {
+    .nav-link {
+        font-size: 16px;
+        padding: 5px 45px;
+    }
+
+    .header__navigation_call-mail {
+        padding: 0;
+    }
+}
