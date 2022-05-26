@@ -30,22 +30,21 @@
 }
 
 h1 {
-    font-family: 'Cormorant Garamond';
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 400;
     font-size: 65px;
     line-height: 78px;
     letter-spacing: 0.4px;
-    color: #FFFFFF;
+    color: var(--usual-decorations);
     padding-bottom: 20px;
 }
 
 .greetings__sub_text {
     display: block;
-    font-family: 'Outfit';
     font-size: 22px;
     line-height: 40px;
     letter-spacing: 0.4px;
-    color: #D1B06B;
+    color: var(--main-style-color);
     padding-bottom: 28px;
 }
 
@@ -57,11 +56,11 @@ h1 {
 .greetings__button {
     padding: 24px 71px;
     color: black;
-    background-color: #D1B06B;
+    background-color: var(--main-style-color);
 }
 
 .greetings__button:hover {
-    color: #D1B06B;
+    color: var(--main-style-color);
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     cursor: pointer;
