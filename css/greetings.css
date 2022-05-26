@@ -17,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
     z-index: 5;
+    padding-bottom: 10px;
 }
 
 .decoration-icon-wrapper {
@@ -113,11 +114,15 @@ h1 {
     }
 }
 
-@media (max-height: 805px) {
+@media (max-height: 885px) {
     .greetings__content_photo {
         max-width: 400px;
         max-height: 600px;
         margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 25px;
     }
 }
 

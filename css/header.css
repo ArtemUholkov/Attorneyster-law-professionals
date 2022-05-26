@@ -271,9 +271,15 @@
     }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 390px) {
     .header_button {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 335px) {
+    .header_button {
+        font-size: 12px;
     }
 }
 
