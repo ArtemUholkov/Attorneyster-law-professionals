@@ -117,6 +117,7 @@ h1 {
     .greetings__content_photo {
         max-width: 400px;
         max-height: 600px;
+        margin: 0 auto;
     }
 }
 
@@ -124,7 +125,6 @@ h1 {
     .greetings__content_photo {
         max-width: 300px;
         max-height: 500px;
-        vertical-align: middle;
         margin: 0 auto;
     }
 
