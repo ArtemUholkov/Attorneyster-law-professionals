@@ -112,11 +112,26 @@
     letter-spacing: 0.4px;
     padding: 13px 45px;
     transition: all 0.5s;
+    display: inline-block;
 }
 
 .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
+}
+
+.nav-link::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background-color: #D1B06B;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+
+.nav-link:hover::after {
+    width: 100%;
 }
 
 .active-link {
@@ -209,6 +224,24 @@
         flex-direction: column;
         gap: 15px;
         align-items: center;
+    }
+
+    .header__container {
+        padding-top: 10px;
+    }
+
+    .header__navigation {
+        padding-top: 0;
+    }
+
+    .decoration-line {
+        display: none;
+    }
+
+    .swap-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
     }
 
     .header__navigation_buttons_wrapper {
