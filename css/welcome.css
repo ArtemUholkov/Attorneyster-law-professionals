@@ -14,11 +14,12 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    justify-content: space-between;
 }
 
 .welcome_image_wrapper {
-    width: 467px;
-    height: 293px;
+    max-width: 467px;
+    max-height: 293px;
 }
 
 .welcome_image_item {
