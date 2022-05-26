@@ -81,11 +81,13 @@
     border-top: 1px solid var(--speceial-decorations);
     border-bottom: 1px solid var(--speceial-decorations);
 
+
 }
 
 .link_list {
     display: flex;
     z-index: 3;
+
 }
 
 .list {
