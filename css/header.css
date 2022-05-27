@@ -80,7 +80,17 @@
     padding: 30px 0;
     border-top: 1px solid var(--speceial-decorations);
     border-bottom: 1px solid var(--speceial-decorations);
+}
 
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0;
+    z-index: 10;
+    justify-content: space-around;
 
 }
 
@@ -192,7 +202,7 @@
     transition: 0.2s;
 }
 
-@media (max-width:1358px) {
+@media (max-width:1405px) {
     .header__navigation_sub-text {
         display: none;
     }

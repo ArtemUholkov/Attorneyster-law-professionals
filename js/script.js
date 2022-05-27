@@ -8,11 +8,7 @@ popup.addEventListener("click", (e) => {
     burgerHandler(e);
 });
 
-sliderItem.forEach(e => {
-    e.addEventListener("click", () => {
-        setImage(e, sliderItem);
-    });
-});
+
 
 function burgerHandler(e) {
 
@@ -35,4 +31,21 @@ function burgerHandler(e) {
 
     }
     burger.classList.toggle('active');
+}
+
+var nav = document.getElementById("nav");
+var stop = (nav.offsetTop);
+
+window.onscroll = function (e) {
+    var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+    console.log(scrollTop, nav.offsetTop);
+    // left.offsetTop;
+    if (window.innerWidth >= 900) {
+        if (scrollTop >= stop) {
+            nav.classList.add('sticky');
+        } else {
+            nav.classList.remove('sticky');
+        }
+    }
+
 }
