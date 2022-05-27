@@ -33,13 +33,12 @@ function burgerHandler(e) {
     burger.classList.toggle('active');
 }
 
-var nav = document.getElementById("nav");
+var nav = document.querySelector("nav");
 var stop = (nav.offsetTop);
 
 window.onscroll = function (e) {
     var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
     console.log(scrollTop, nav.offsetTop);
-    // left.offsetTop;
     if (window.innerWidth >= 900) {
         if (scrollTop >= stop) {
             nav.classList.add('sticky');
