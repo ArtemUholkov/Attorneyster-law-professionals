@@ -129,7 +129,7 @@ h2 {
     color: #1F2732;
 }
 
-@media (max-width: 1265px) {
+@media (max-width: 1300px) {
     .welcome-container {
         display: flex;
         flex-direction: column;
