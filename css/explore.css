@@ -30,17 +30,22 @@
 .explore__content-block_item {
     width: calc(33% - 30px);
     background-color: var(--sub-dark-bg-color);
+    display: flex;
+    justify-content: center;
+
 }
 
 .explore__content_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 55px 50px;
+
 }
 
 
 .explore_content_text-part {
-    border-bottom: 1px solid var(--speceial-decorations);
-    padding-bottom: 28px;
-    margin-bottom: 38px;
+    padding-bottom: 38px;
 }
 
 h3 {
@@ -56,6 +61,11 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: auto;
+    margin-bottom: 5px;
+    border-top: 1px solid var(--speceial-decorations);
+    padding-top: 37px;
+
 }
 
 .explore_icon_wrapper {
@@ -84,6 +94,7 @@ h3 {
     background-color: var(--main-style-color);
     border-radius: 10px;
     color: var(--usual-bg-color);
+    cursor: pointer;
 }
 
 @media (max-width: 1272px) {
