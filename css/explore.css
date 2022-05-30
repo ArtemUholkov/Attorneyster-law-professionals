@@ -1,0 +1,149 @@
+.explore {
+    width: 100%;
+    background-color: var(--usual-bg-color);
+}
+
+.explore_container {
+    padding: 140px 0;
+}
+
+.explore__title-block {
+    display: flex;
+    padding-bottom: 60px;
+}
+
+.explore__title-block_title {
+    width: 50%;
+}
+
+.explore_sub_text {
+    width: 50%;
+}
+
+.explore__content-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.explore__content-block_item {
+    width: calc(33% - 30px);
+    background-color: var(--sub-dark-bg-color);
+}
+
+.explore__content_wrapper {
+    padding: 55px 50px;
+}
+
+
+.explore_content_text-part {
+    border-bottom: 1px solid var(--speceial-decorations);
+    padding-bottom: 28px;
+    margin-bottom: 38px;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 56px;
+    color: var(--usual-decorations);
+    padding-bottom: 8px;
+}
+
+.explore__content-block_item-icon-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.explore_icon_wrapper {
+    width: 53px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.explore_icon {
+    width: 100%;
+}
+
+
+.explore_button {
+    font-size: 20px;
+    line-height: 32px;
+    transition: all 0.5s;
+    background-color: var(--usual-bg-color);
+    color: var(--usual-decorations);
+    padding: 13px 42px;
+    border: 0;
+}
+
+.explore_button:hover {
+    background-color: var(--main-style-color);
+    border-radius: 10px;
+    color: var(--usual-bg-color);
+}
+
+@media (max-width: 1272px) {
+    .explore__content-block_item {
+        width: calc(50% - 15px);
+
+    }
+
+    .explore__content-block {
+
+        gap: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .explore__title-block {
+        flex-direction: column;
+    }
+
+    .explore_sub_text {
+        width: 100%;
+    }
+
+    .explore__title-block_title {
+        width: 100%;
+    }
+}
+
+@media (max-width: 817px) {
+    .explore__content-block_item {
+        width: calc(100% - 15px);
+
+    }
+
+    .explore__content-block {
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .explore__content_wrapper {
+        padding: 40px 40px;
+    }
+
+    .explore_container {
+        padding: 70px 0;
+    }
+
+}
+
+@media (max-width: 410px) {
+    .explore_button {
+        font-size: 14px;
+    }
+
+    .explore__content_wrapper {
+        padding: 20px 20px;
+    }
+
+    .explore_container {
+        padding: 20px 0;
+    }
+}
