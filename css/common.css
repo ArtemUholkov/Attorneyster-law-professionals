@@ -116,10 +116,11 @@ table {
 :root {
     --main-style-color: #D1B06B;
     --usual-decorations: #FFFFFF;
-    --speceial-decorations: #deebff;
+    --speceial-decorations: #4E555F;
     --usual-bg-color: #161D27;
     --usual-sub-text-color: #D7D7D7;
     --sub-bg-color: #3B434E;
+    --sub-dark-bg-color: #1F2732;
 }
 
 /*COLOR VARIABLES END*/

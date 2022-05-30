@@ -17,6 +17,10 @@
     background: rgba(31, 39, 50, 0.81);
 }
 
+header {
+    z-index: 1;
+}
+
 .header__container {
     padding: 40px 20px 0px 20px;
 }
@@ -25,6 +29,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 40px;
 
 }
 
@@ -32,22 +37,12 @@
     width: 100%;
     max-width: 400px;
     max-height: 79px;
-    z-index: 3;
 }
 
 .header-logo {
     width: 100%;
 }
 
-.button-wrapper {
-    width: 100%;
-    max-width: 350px;
-    max-height: 85px;
-    display: flex;
-    justify-content: center;
-    z-index: 3;
-    padding-bottom: 40px;
-}
 
 .button {
     justify-content: center;
@@ -76,10 +71,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 3;
     padding: 30px 0;
     border-top: 1px solid var(--speceial-decorations);
     border-bottom: 1px solid var(--speceial-decorations);
+
 }
 
 .sticky {
@@ -89,24 +84,16 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     border: 0;
-    z-index: 10;
     justify-content: space-around;
 
 }
 
 .link_list {
     display: flex;
-    z-index: 3;
-
 }
 
 .list {
     display: flex;
-    z-index: 3;
-}
-
-.link {
-    z-index: 3;
 }
 
 .nav-link {
@@ -144,7 +131,6 @@
 }
 
 .header__navigation_buttons_wrapper {
-    z-index: 3;
     display: flex;
     gap: 50px;
 }
@@ -162,14 +148,19 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.icon__wrapper {
+.phone_icon,
+.mail_icon {
     width: 62px;
     height: 62px;
     border: 1px solid var(--main-style-color);
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: url("../img/header/phone-icon.svg") no-repeat;
+    background-position: center;
+}
+
+.mail_icon {
+    background: url("../img/header/mail-icon.svg") no-repeat;
+    background-position: center;
 }
 
 .header__navigation_button_text {
@@ -200,9 +191,16 @@
     margin: 6px auto;
     background-color: var(--usual-decorations);
     transition: 0.2s;
+
 }
 
 @media (max-width:1405px) {
+    .nav-link {
+        padding: 13px 25px;
+    }
+}
+
+@media (max-width: 1230px) {
     .header__navigation_sub-text {
         display: none;
     }
@@ -214,11 +212,9 @@
     .header__navigation_call-mail {
         gap: 0;
     }
-}
 
-@media (max-width: 1006px) {
-    .nav-link {
-        padding: 13px 25px;
+    .header__navigation_buttons_wrapper {
+        gap: 25px;
     }
 }
 
@@ -245,7 +241,7 @@
     }
 
     .header__navigation_buttons_wrapper {
-        gap: 20px;
+        gap: 10px;
     }
 
     .list {
@@ -280,6 +276,12 @@
 
     .header__container {
         padding-bottom: 20px;
+    }
+
+    .phone_icon,
+    .mail_icon {
+        width: 50px;
+        height: 50px;
     }
 }
 
