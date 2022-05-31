@@ -1,0 +1,219 @@
+.partners {
+    width: 100%;
+    background-color: var(--usual-decorations);
+}
+
+.partners_container {
+    padding: 124px 0 130px;
+}
+
+.partners__title {
+    color: var(--usual-bg-color);
+    text-align: center;
+}
+
+.partners_deco-icon_wrapper {
+    width: 95px;
+    height: 44px;
+    margin: 0 auto;
+    padding-bottom: 45px;
+}
+
+.partners_icon {
+    width: 100%;
+    object-fit: contain;
+}
+
+.partners_sub-text {
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: var(--sub-text-uncommon-color);
+    padding-bottom: 60px;
+}
+
+.partners__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.partners_content_container {
+    width: calc(66.66%);
+    display: flex;
+    justify-content: space-around;
+}
+
+.partners__content_item {
+
+    display: flex;
+    gap: 20px;
+}
+
+.partners__content_item_container {
+    width: 118px;
+    height: 120px;
+    border: 2px solid #D1B06B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners_icon_wrapper {
+    width: 22px;
+    height: 20px;
+}
+
+.heart_icon {
+    width: 100%;
+}
+
+.partners__content_item_container_mark {
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: 0.4px;
+    color: var(--sub-dark-bg-color);
+}
+
+.partners__content_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h4 {
+    font-family: 'Cormorant Garamond';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 42px;
+    color: var(--sub-dark-bg-color);
+}
+
+.partners__content_item_sub_text {
+    line-height: 32px;
+    color: var(--sub-text-uncommon-color);
+}
+
+.partners__content_item_image {
+    max-width: 33.33%;
+    width: 433px;
+    height: 180px;
+    background: url("../img/partners/criminal-defence.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.sub_mark {
+    color: var(--usual-decorations);
+}
+
+@media (max-width: 1270px) {
+    .partners__content {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .partners__content_item {
+        width: calc(50%);
+        justify-content: center;
+    }
+
+    .partners__content_item_image {
+        width: 100%;
+        margin: 0 auto;
+        min-height: 180px;
+        min-width: 433px;
+        padding-top: 25px;
+    }
+
+    .partners_content_container {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 740px) {
+    .partners_content_container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .partners__content {
+        flex-direction: column;
+    }
+
+    .partners__content_item {
+        width: 66.66%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+@media (max-width: 628px) {
+    .partners__content_item {
+        width: 80%;
+    }
+
+    .partners_container {
+        padding: 25px 0;
+    }
+}
+
+@media (max-width: 540px) {
+    .partners__content_item_image {
+        min-width: 300px;
+        min-height: 150px;
+        width: 100%;
+        height: 100%;
+        justify-content: flex-start;
+    }
+
+    .partners__content_item {
+        width: 100%;
+    }
+
+    .partners_content_container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 415px) {
+    .partners__content_item_image {
+        min-width: 250px;
+        min-height: 180px;
+    }
+
+    .sub_mark {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .partners__content_item_image_text {
+        font-size: 16px;
+        line-height: 18px;
+        height: fit-content;
+    }
+
+    .partners__content_item {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .partners__content_item_image {
+        min-width: 200px;
+        min-height: 130px;
+        padding: 10px 0px 0px 25px;
+    }
+}
