@@ -101,7 +101,8 @@ header {
     display: flex;
 }
 
-.nav-link {
+.nav-link,
+.active-link {
     text-decoration: none;
     color: var(--usual-decorations);
     font-size: 22px;
