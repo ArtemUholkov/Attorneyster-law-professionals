@@ -26,9 +26,13 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform .3s;
+
 }
 
-
+.welcome_image_item:hover {
+    transform: scale(1.15)
+}
 
 h2 {
     font-family: 'Cormorant Garamond', sans-serif;
@@ -38,7 +42,6 @@ h2 {
     letter-spacing: 0.4px;
     color: var(--usual-decorations);
     padding-bottom: 11px;
-
 }
 
 .welcome_decoration_wrapper {
