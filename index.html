@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,307 +16,390 @@
 
 </head>
 
-<body>
-    <div class="bg_photo">
-        <div class="bg_filter"></div>
-        <header>
-            <div class="container header__container">
-                <div class="swap-container">
-                    <div class="header__logo-button">
-                        <div class="logo_wrapper">
-                            <a href="#"><img src="img/header/atoorneyster-logo.svg" alt="" class="header-logo"></a>
-                        </div>
-                        <button class="button header_button">Book A Consultation</button>
+
+<div class="bg_photo">
+    <div class="bg_filter"></div>
+    <header>
+        <div class="container header__container">
+            <div class="swap-container">
+                <div class="header__logo-button">
+                    <div class="logo_wrapper">
+                        <a href="#"><img src="img/header/atoorneyster-logo.svg" alt="" class="header-logo"></a>
                     </div>
-                    <nav class="header__navigation" id="nav">
-                        <div class="link_list">
-                            <ul class="list">
-                                <li class="link"><a class="nav-link active-link" href="">Home</a></li>
-                                <li class="link"><a class="nav-link" href="">About Us</a></li>
-                                <li class="link"><a class="nav-link" href="">Pages</a></li>
-                                <li class="link"><a class="nav-link" href="">Contact Us</a></li>
-                            </ul>
-                            <div class="burger">
-                                <div class="burger_space" id="burger">
-                                    <span class="stick"></span>
-                                    <span class="stick"></span>
-                                    <span class="stick"></span>
-                                </div>
+                    <button class="button header_button">Book A Consultation</button>
+                </div>
+                <nav class="header__navigation" id="nav">
+                    <div class="link_list">
+                        <ul class="list">
+                            <li class="link"><a class="nav-link active-link" href="">Home</a></li>
+                            <li class="link"><a class="nav-link" href="">About Us</a></li>
+                            <li class="link"><a class="nav-link" href="">Pages</a></li>
+                            <li class="link"><a class="nav-link" href="">Contact Us</a></li>
+                        </ul>
+                        <div class="burger">
+                            <div class="burger_space" id="burger">
+                                <span class="stick"></span>
+                                <span class="stick"></span>
+                                <span class="stick"></span>
                             </div>
                         </div>
-                        <div class="header__navigation_buttons_wrapper">
-                            <a href="#" class="button_link_wrapper">
-                                <div class="header__navigation_call-mail">
-                                    <div class="phone_icon"></div>
-                                    <div class="header__navigation_button_text">
-                                        <span class="header__navigation_title-text">Call Us On:</span>
-                                        <span class="header__navigation_sub-text">911-987654321</span>
-                                    </div>
+                    </div>
+                    <div class="header__navigation_buttons_wrapper">
+                        <a href="#" class="button_link_wrapper">
+                            <div class="header__navigation_call-mail">
+                                <div class="phone_icon"></div>
+                                <div class="header__navigation_button_text">
+                                    <span class="header__navigation_title-text">Call Us On:</span>
+                                    <span class="header__navigation_sub-text">911-987654321</span>
                                 </div>
-                            </a>
-                            <a href="#" class="button_link_wrapper">
-                                <div class="header__navigation_call-mail">
-                                    <div class="mail_icon"></div>
-                                    <div class="header__navigation_button_text">
-                                        <span class="header__navigation_title-text">Email Us On:</span>
-                                        <span class="header__navigation_sub-text">yourmail@mail.com</span>
-                                    </div>
+                            </div>
+                        </a>
+                        <a href="#" class="button_link_wrapper">
+                            <div class="header__navigation_call-mail">
+                                <div class="mail_icon"></div>
+                                <div class="header__navigation_button_text">
+                                    <span class="header__navigation_title-text">Email Us On:</span>
+                                    <span class="header__navigation_sub-text">yourmail@mail.com</span>
                                 </div>
-                            </a>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <section class="greetings">
-            <div class="container greetings_container">
-                <div class="greetings__content">
-                    <div class="greetings__content-text">
-                        <div class="decoration-icon-wrapper">
-                            <img src="img/greetings/decoration-icon.png" alt="" class="decoration_icon">
-                        </div>
-                        <h1>We're Group Of Certified Law Professionals</h1>
-                        <span class="greetings__sub_text">we have helped countless maritime workers and their families
-                            go up
-                            against the largest offshore companies and win.</span>
-                        <div class="button-wrapper greetings__button_wrapper">
-                            <button class="button greetings__button">Get In Touch</button>
-                        </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="greetings__content_photo">
-                        <img src="img/greetings/business-photo.png" alt="" class="greetings-photo">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="popup" id="popup">
-        <div class="popup_textblock" id="popupSlide">
-            <ul class="navbar_menu_mobile">
-                <li><a class="nav_elem_mobile" href="#">Home</a></li>
-                <li><a class="nav_elem_mobile" href="#">About Us</a></li>
-                <li><a class="nav_elem_mobile" href="#">Pages</a></li>
-                <li><a class="nav_elem_mobile" href="#">Contact Us</a></li>
-            </ul>
-        </div>
-    </div>
-    <section class="welcome">
-        <div class="container welcome-container">
-            <div class="welcome__images">
-                <div class="welcome_image_wrapper">
-                    <img src="img/welcome/library.png" alt="library" class="welcome_image_item">
-                </div>
-                <div class="welcome_image_wrapper">
-                    <img src="img/welcome/hammer.png" alt="hammer" class="welcome_image_item">
-                </div>
-            </div>
-            <div class="welcome__content">
-                <h2>Welcome to Attorney Law -<br> Lawyer & Law Firm Company</h2>
-                <div class="decoration-icon-wrapper welcome_decoration_wrapper">
-                    <img src="img/greetings/decoration-icon.png" alt="" class="decoration_icon">
-                </div>
-                <span class="sub_text">
-                    Although we are located in Brooklyn, our maritime lawyers are proud to help the injured throughout
-                    the nation, including
-                    workers who were working in foreign waters at the time of the incident go up against the largest
-                    offshore companies and
-                    win.
-                </span>
-                <div class="person">
-                    <div class="person_image-wrapper">
-                        <img src="img/welcome/person.png" alt="" class="person_image">
-                    </div>
-                    <span class="person_name">Peter Parker</span>
-                </div>
-                <div class="welcome__content_cases_wrapper">
-                    <div class="welcome__content_case">
-                        <div class="welcome__content_icon_wrapper">
-                            <img src="img/welcome/pencil.png" alt="" class="welcome__content_icon">
-                        </div>
-                        <div class="welcome__case_text_wrapper">
-                            <span class="welcome__case_text">95%</span>
-                            <span class="welcome__case_text">Case Success</span>
-                        </div>
-                    </div>
-                    <div class="welcome__content_case golden_case">
-                        <div class="welcome_case_years_wrapper">
-                            <span class="welcome_case_years">35+</span>
-                        </div>
-                        <div class="welcome__case_text_wrapper">
-
-                            <span class="welcome__case_text text_dark">Years<br>Experience</span>
-                        </div>
-                    </div>
-                </div>
+                </nav>
             </div>
         </div>
-        </div>
-    </section>
-    <section class="explore">
-        <div class="container explore_container">
-            <div class="explore__title-block">
-                <div class="explore__title-block_title">
-                    <h2>Explore The perfect<br>Our Practice Areas</h2>
+    </header>
+    <section class="greetings">
+        <div class="container greetings_container">
+            <div class="greetings__content">
+                <div class="greetings__content-text">
                     <div class="decoration-icon-wrapper">
                         <img src="img/greetings/decoration-icon.png" alt="" class="decoration_icon">
                     </div>
-                </div>
-                <span class="sub_text explore_sub_text">We are a group of civil litigation/trial attorneys who
-                    focus on
-                    providing a
-                    justice based on the issues relating to
-                    insurance defense, insurance coverage, bad faith, insurance fraud and criminal litigation.</span>
-            </div>
-            <div class="explore__content-block">
-                <div class="explore__content-block_item">
-                    <div class="explore__content_wrapper">
-                        <div class="explore_content_text-part">
-                            <h3>Business Law</h3>
-                            <span class="sub_text explore_item_sub_text">Be aware of new developments, as laws and rules
-                                often change based on the
-                                situation.</span>
-                        </div>
-
-                        <div class="explore__content-block_item-icon-button">
-                            <div class="explore_icon_wrapper">
-                                <img src="img/explore/case-icon.png" alt="" class="explore_icon">
-                            </div>
-                            <button class="button explore_button">View more</button>
-                        </div>
+                    <h1>We're Group Of Certified Law Professionals</h1>
+                    <span class="greetings__sub_text">we have helped countless maritime workers and their families
+                        go up
+                        against the largest offshore companies and win.</span>
+                    <div class="button-wrapper greetings__button_wrapper">
+                        <button class="button greetings__button">Get In Touch</button>
                     </div>
                 </div>
-                <div class="explore__content-block_item">
-                    <div class="explore__content_wrapper">
-                        <div class="explore_content_text-part">
-                            <h3>Construction Law</h3>
-                            <span class="sub_text explore_item_sub_text">Never judge, just listen and advise. Even if
-                                your
-                                client has made a bad
-                                decision in the case.</span>
-                        </div>
-                        <div class="explore__content-block_item-icon-button">
-                            <div class="explore_icon_wrapper">
-                                <img src="img/explore/building-icon.png" alt="" class="explore_icon">
-                            </div>
-                            <button class="button explore_button">View more</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="explore__content-block_item">
-                    <div class="explore__content_wrapper">
-                        <div class="explore_content_text-part">
-                            <h3>Car Accident</h3>
-                            <span class="sub_text explore_item_sub_text">Being untruthful will get you nowhere and give
-                                you
-                                a reputation of the
-                                dishonesty in law.</span>
-                        </div>
-                        <div class="explore__content-block_item-icon-button">
-                            <div class="explore_icon_wrapper">
-                                <img src="img/explore/car-icon.png" alt="" class="explore_icon">
-                            </div>
-                            <button class="button explore_button">View more</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="explore__content-block_item">
-                    <div class="explore__content_wrapper">
-                        <div class="explore_content_text-part">
-                            <h3>Wrongful Death</h3>
-                            <span class="sub_text explore_item_sub_text">Keep yourself up-to-date on your area of law.
-                                Be
-                                aware of new justice, as
-                                laws and rules.</span>
-                        </div>
-                        <div class="explore__content-block_item-icon-button">
-                            <div class="explore_icon_wrapper">
-                                <img src="img/explore/rip-icon.png" alt="" class="explore_icon">
-                            </div>
-                            <button class="button explore_button">View more</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="explore__content-block_item">
-                    <div class="explore__content_wrapper">
-                        <div class="explore_content_text-part">
-                            <h3>Criminal Law</h3>
-                            <span class="sub_text explore_item_sub_text">Our attorneys are fully committed to providing
-                                you
-                                with the support and
-                                attention that you deserve.</span>
-                        </div>
-                        <div class="explore__content-block_item-icon-button">
-                            <div class="explore_icon_wrapper">
-                                <img src="img/explore/law-icon.png" alt="" class="explore_icon">
-                            </div>
-                            <button class="button explore_button">View more</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="explore__content-block_item">
-                    <div class="explore__content_wrapper">
-                        <div class="explore_content_text-part">
-                            <h3>Family Law</h3>
-                            <span class="sub_text explore_item_sub_text">You may find yourself unable to work or
-                                complete
-                                work-related
-                                responsibilities safely.</span>
-                        </div>
-                        <div class="explore__content-block_item-icon-button">
-                            <div class="explore_icon_wrapper">
-                                <img src="img/explore/people-icon.png" alt="" class="explore_icon">
-                            </div>
-                            <button class="button explore_button">View more</button>
-                        </div>
-                    </div>
+                <div class="greetings__content_photo">
+                    <img src="img/greetings/business-photo.png" alt="" class="greetings-photo">
                 </div>
             </div>
         </div>
     </section>
-    <section class="partners">
-        <div class="container partners_container">
-            <h2 class="partners__title">Fighting To Get What<br>You Deserve</h2>
-            <div class="partners_deco-icon_wrapper">
-                <img src="img/partners/wide-deco-icon.png" alt="" class="partners_icon">
+</div>
+<div class="popup" id="popup">
+    <div class="popup_textblock" id="popupSlide">
+        <ul class="navbar_menu_mobile">
+            <li><a class="nav_elem_mobile" href="#">Home</a></li>
+            <li><a class="nav_elem_mobile" href="#">About Us</a></li>
+            <li><a class="nav_elem_mobile" href="#">Pages</a></li>
+            <li><a class="nav_elem_mobile" href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+<section class="welcome">
+    <div class="container welcome-container">
+        <div class="welcome__images">
+            <div class="welcome_image_wrapper">
+                <img src="img/welcome/library.png" alt="library" class="welcome_image_item">
             </div>
-            <span class="sub_text partners_sub-text">Our board-certified family law attorneys work to achieve a fair
-                and<br>timely resolution of the legal issues in your case.
+            <div class="welcome_image_wrapper">
+                <img src="img/welcome/hammer.png" alt="hammer" class="welcome_image_item">
+            </div>
+        </div>
+        <div class="welcome__content">
+            <h2>Welcome to Attorney Law -<br> Lawyer & Law Firm Company</h2>
+            <div class="decoration-icon-wrapper welcome_decoration_wrapper">
+                <img src="img/greetings/decoration-icon.png" alt="" class="decoration_icon">
+            </div>
+            <span class="sub_text">
+                Although we are located in Brooklyn, our maritime lawyers are proud to help the injured throughout
+                the nation, including
+                workers who were working in foreign waters at the time of the incident go up against the largest
+                offshore companies and
+                win.
             </span>
-            <div class="partners__content">
-                <div class="partners_content_container">
-                    <div class="partners__content_item">
-                        <div class="partners__content_item_container">
-                            <div class="partners_icon_wrapper">
-                                <img src="img/partners/heart-icon.png" alt="" class="heart-star_icon">
-                            </div>
-                            <span class="partners__content_item_container_mark">7230</span>
-                        </div>
-                        <div class="partners__content_text">
-                            <h4>Trusted Clients</h4>
-                            <span class="sub_text partners__content_item_sub_text">Number Of Clients We've</span>
-                        </div>
+            <div class="person">
+                <div class="person_image-wrapper">
+                    <img src="img/welcome/person.png" alt="" class="person_image">
+                </div>
+                <span class="person_name">Peter Parker</span>
+            </div>
+            <div class="welcome__content_cases_wrapper">
+                <div class="welcome__content_case">
+                    <div class="welcome__content_icon_wrapper">
+                        <img src="img/welcome/pencil.png" alt="" class="welcome__content_icon">
                     </div>
-                    <div class="partners__content_item">
-                        <div class="partners__content_item_container">
-                            <div class="partners_icon_wrapper">
-                                <img src="img/partners/star-icon.png" alt="" class="heart-star_icon">
-                            </div>
-                            <span class="partners__content_item_container_mark">98%</span>
-                        </div>
-                        <div class="partners__content_text">
-                            <h4>Successful Cases</h4>
-                            <span class="sub_text partners__content_item_sub_text">Largest winning value</span>
-                        </div>
+                    <div class="welcome__case_text_wrapper">
+                        <span class="welcome__case_text">95%</span>
+                        <span class="welcome__case_text">Case Success</span>
                     </div>
                 </div>
-                <div class="partners__content_item_image">
-                    <span class="partners__content_item_container_mark sub_mark">15,890+</span>
-                    <span class="sub_text partners__content_item_image_text">Criminal Defense<br>Case Served</span>
+                <div class="welcome__content_case golden_case">
+                    <div class="welcome_case_years_wrapper">
+                        <span class="welcome_case_years">35+</span>
+                    </div>
+                    <div class="welcome__case_text_wrapper">
+
+                        <span class="welcome__case_text text_dark">Years<br>Experience</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <script src="js/script.js"></script>
+    </div>
+    </div>
+</section>
+<section class="explore">
+    <div class="container explore_container">
+        <div class="explore__title-block">
+            <div class="explore__title-block_title">
+                <h2>Explore The perfect<br>Our Practice Areas</h2>
+                <div class="decoration-icon-wrapper">
+                    <img src="img/greetings/decoration-icon.png" alt="" class="decoration_icon">
+                </div>
+            </div>
+            <span class="sub_text explore_sub_text">We are a group of civil litigation/trial attorneys who
+                focus on
+                providing a
+                justice based on the issues relating to
+                insurance defense, insurance coverage, bad faith, insurance fraud and criminal litigation.</span>
+        </div>
+        <div class="explore__content-block">
+            <div class="explore__content-block_item">
+                <div class="explore__content_wrapper">
+                    <div class="explore_content_text-part">
+                        <h3>Business Law</h3>
+                        <span class="sub_text explore_item_sub_text">Be aware of new developments, as laws and rules
+                            often change based on the
+                            situation.</span>
+                    </div>
+
+                    <div class="explore__content-block_item-icon-button">
+                        <div class="explore_icon_wrapper">
+                            <img src="img/explore/case-icon.png" alt="" class="explore_icon">
+                        </div>
+                        <button class="button explore_button">View more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="explore__content-block_item">
+                <div class="explore__content_wrapper">
+                    <div class="explore_content_text-part">
+                        <h3>Construction Law</h3>
+                        <span class="sub_text explore_item_sub_text">Never judge, just listen and advise. Even if
+                            your
+                            client has made a bad
+                            decision in the case.</span>
+                    </div>
+                    <div class="explore__content-block_item-icon-button">
+                        <div class="explore_icon_wrapper">
+                            <img src="img/explore/building-icon.png" alt="" class="explore_icon">
+                        </div>
+                        <button class="button explore_button">View more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="explore__content-block_item">
+                <div class="explore__content_wrapper">
+                    <div class="explore_content_text-part">
+                        <h3>Car Accident</h3>
+                        <span class="sub_text explore_item_sub_text">Being untruthful will get you nowhere and give
+                            you
+                            a reputation of the
+                            dishonesty in law.</span>
+                    </div>
+                    <div class="explore__content-block_item-icon-button">
+                        <div class="explore_icon_wrapper">
+                            <img src="img/explore/car-icon.png" alt="" class="explore_icon">
+                        </div>
+                        <button class="button explore_button">View more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="explore__content-block_item">
+                <div class="explore__content_wrapper">
+                    <div class="explore_content_text-part">
+                        <h3>Wrongful Death</h3>
+                        <span class="sub_text explore_item_sub_text">Keep yourself up-to-date on your area of law.
+                            Be
+                            aware of new justice, as
+                            laws and rules.</span>
+                    </div>
+                    <div class="explore__content-block_item-icon-button">
+                        <div class="explore_icon_wrapper">
+                            <img src="img/explore/rip-icon.png" alt="" class="explore_icon">
+                        </div>
+                        <button class="button explore_button">View more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="explore__content-block_item">
+                <div class="explore__content_wrapper">
+                    <div class="explore_content_text-part">
+                        <h3>Criminal Law</h3>
+                        <span class="sub_text explore_item_sub_text">Our attorneys are fully committed to providing
+                            you
+                            with the support and
+                            attention that you deserve.</span>
+                    </div>
+                    <div class="explore__content-block_item-icon-button">
+                        <div class="explore_icon_wrapper">
+                            <img src="img/explore/law-icon.png" alt="" class="explore_icon">
+                        </div>
+                        <button class="button explore_button">View more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="explore__content-block_item">
+                <div class="explore__content_wrapper">
+                    <div class="explore_content_text-part">
+                        <h3>Family Law</h3>
+                        <span class="sub_text explore_item_sub_text">You may find yourself unable to work or
+                            complete
+                            work-related
+                            responsibilities safely.</span>
+                    </div>
+                    <div class="explore__content-block_item-icon-button">
+                        <div class="explore_icon_wrapper">
+                            <img src="img/explore/people-icon.png" alt="" class="explore_icon">
+                        </div>
+                        <button class="button explore_button">View more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="partners">
+    <div class="container partners_container">
+        <h2 class="partners__title">Fighting To Get What<br>You Deserve</h2>
+        <div class="partners_deco-icon_wrapper">
+            <img src="img/partners/wide-deco-icon.png" alt="" class="partners_icon">
+        </div>
+        <span class="sub_text partners_sub-text">Our board-certified family law attorneys work to achieve a fair
+            and<br>timely resolution of the legal issues in your case.
+        </span>
+        <div class="partners__content">
+            <div class="partners_content_container">
+                <div class="partners__content_item">
+                    <div class="partners__content_item_container">
+                        <div class="partners_icon_wrapper">
+                            <img src="img/partners/heart-icon.png" alt="" class="heart-star_icon">
+                        </div>
+                        <span class="partners__content_item_container_mark">7230</span>
+                    </div>
+                    <div class="partners__content_text">
+                        <h4>Trusted Clients</h4>
+                        <span class="sub_text partners__content_item_sub_text">Number Of Clients We've</span>
+                    </div>
+                </div>
+                <div class="partners__content_item">
+                    <div class="partners__content_item_container">
+                        <div class="partners_icon_wrapper">
+                            <img src="img/partners/star-icon.png" alt="" class="heart-star_icon">
+                        </div>
+                        <span class="partners__content_item_container_mark">98%</span>
+                    </div>
+                    <div class="partners__content_text">
+                        <h4>Successful Cases</h4>
+                        <span class="sub_text partners__content_item_sub_text">Largest winning value</span>
+                    </div>
+                </div>
+            </div>
+            <div class="partners__content_item_image">
+                <span class="partners__content_item_container_mark sub_mark">15,890+</span>
+                <span class="sub_text partners__content_item_image_text">Criminal Defense<br>Case Served</span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="meet">
+    <div class="container meet_container">
+        <div class="meet_title-block">
+            <div class="middle_icon_wrapper">
+                <img src="img/meet/middle-icon.png" alt="" class="middle_icon">
+            </div>
+            <h2 class="partners__title">Meet The Partners</h2>
+            <div class="middle_icon_wrapper">
+                <img src="img/meet/middle-icon.png" alt="" class="middle_icon">
+            </div>
+        </div>
+        <div class="meet__slider">
+            <!-- Slider main container -->
+            <div class="swiper mySwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider_image1">
+                            <img src="img/meet/home.png" alt="" class="meet__slider_image_1">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider_image2">
+                            <img src="img/meet/vs.png" alt="" class="meet__slider_image_2">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider_image3">
+                            <img src="img/meet/brand.png" alt="" class="meet__slider_image_3">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider_image4">
+                            <img src="img/meet/nature-home.png" alt="" class="meet__slider_image_4">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider_image5">
+                            <img src="img/meet/classic.png" alt="" class="meet__slider_image_5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<script src="js/script.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            100: {
+                slidesPerView: 1,
+                spaceBetween: 30
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            1250: {
+                slidesPerView: 5,
+                spaceBetween: 30
+            },
+
+        }
+
+    });
+
+</script>
 
 </body>
 
