@@ -38,7 +38,6 @@ var stop = (nav.offsetTop);
 
 window.onscroll = function (e) {
     var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-    console.log(scrollTop, nav.offsetTop);
     if (window.innerWidth >= 900) {
         if (scrollTop >= stop) {
             nav.classList.add('sticky');
@@ -47,4 +46,30 @@ window.onscroll = function (e) {
         }
     }
 
+}
+
+const worker = document.querySelectorAll('#worker');
+const links = document.querySelectorAll('#links');
+if (window.innerWidth >= 860) {
+    worker.forEach(function (e, id) {
+        e.addEventListener("mouseenter", () => {
+            links.forEach(elem => {
+                elem.classList.remove('active');
+                elem.classList.remove('opacity');
+
+            });
+            links[id].classList.add('active');
+            setTimeout(() => {
+                links[id].classList.add('opacity');
+
+            }, 20);
+        });
+    });
+}
+else {
+    links.forEach(elem => {
+        elem.classList.add('active');
+        elem.classList.add('opacity');
+
+    });
 }

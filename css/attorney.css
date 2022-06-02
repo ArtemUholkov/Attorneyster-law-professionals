@@ -1,0 +1,130 @@
+.attorney {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.attorney_container {
+    padding: 120px 0;
+}
+
+.attorney__title-block {
+    padding-bottom: 70px;
+}
+
+.black-title {
+    color: var(--usual-bg-color);
+}
+
+.attorney__workers_wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.attorney__worker {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 433px;
+}
+
+.attorney__worker_photo_john {
+    background: url("../img/attorney/john-turner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.attorney__worker_photo_martha {
+    background: url("../img/attorney/martha-black.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.attorney__worker_photo_brian {
+    background: url("../img/attorney/brian-gomez.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.attorney__worker_links {
+    display: none;
+}
+
+.active {
+    background-color: #FFFFFF;
+    padding: 11px 17px 5px;
+    display: flex;
+    gap: 5px;
+    opacity: 0;
+    transition: all ease 1s;
+}
+
+.opacity {
+    opacity: 1;
+}
+
+.worker_profile_link {
+    width: 19.5px;
+    height: 19px;
+}
+
+.attorney__worker_links_link {
+    padding: 10px;
+}
+
+.attorney__worker_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.worker_name {
+    font-family: 'Cormorant Garamond';
+    font-size: 30px;
+    line-height: 39px;
+    color: var(--usual-bg-color);
+}
+
+.worker_position {
+    color: var(--main-style-color);
+}
+
+@media (max-width: 860px) {
+    .attorney__workers_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .attorney__worker_photo_john {
+        height: 500px;
+    }
+
+    .attorney__worker_photo_martha {
+        height: 500px;
+    }
+
+    .attorney__worker_photo_brian {
+        height: 500px;
+    }
+
+    .attorney_container {
+        padding: 20px 0;
+    }
+}
