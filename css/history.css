@@ -158,3 +158,10 @@
 
     }
 }
+
+@media (max-width: 360px) {
+    .history_button {
+        margin: 0 auto;
+        padding: 10px 25px;
+    }
+}

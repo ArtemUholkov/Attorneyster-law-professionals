@@ -1,0 +1,131 @@
+.reviews {
+    width: 100%;
+    background-color: var(--usual-bg-color);
+}
+
+.reviews_container {
+    padding: 125px 0 140px;
+}
+
+.reviews__title-container {
+    padding-bottom: 100px;
+}
+
+.reviews_title {
+    text-align: center;
+}
+
+.middle_icon {
+    display: block;
+    width: 95px;
+    height: 44px;
+    margin: 0 auto;
+}
+
+.reviews__content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.reviews__content_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.reviews__content_item_text-wrapper {
+    background-color: var(--bg-block-color);
+
+
+}
+
+.bottom_corner {
+    border-radius: 1px 1px 1px 40px;
+    margin-bottom: 20px;
+}
+
+.top_corner {
+    border-radius: 40px 1px 1px 1px;
+    margin-top: 20px;
+}
+
+.reviews__content_item_text-container {
+    padding: 53px 45px;
+}
+
+.revies_icon {
+    display: block;
+    width: 32px;
+    height: 26px;
+    margin-bottom: 33px;
+}
+
+
+.reviews__content_item_client-wrapper {
+    display: flex;
+    gap: 22px;
+}
+
+.reviews_client_image {
+    width: 84px;
+    height: 83px;
+    border-radius: 50%;
+}
+
+.client_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.client_name {
+    font-family: 'Cormorant Garamond';
+    font-size: 30px;
+    line-height: 39px;
+    color: var(--usual-decorations);
+}
+
+@media (max-width: 1200px) {
+    .reviews__content-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .reviews__content_item {
+        width: calc(50% - 15px);
+    }
+
+    .reviews_container {
+        padding: 80px 0 80px;
+    }
+}
+
+@media (max-width: 620px) {
+    .reviews__content_item {
+        width: 100%;
+    }
+
+    .flex-swap {
+        flex-direction: column-reverse;
+    }
+
+    .bottom_corner {
+        border-radius: 40px 1px 1px 1px;
+        margin-top: 20px;
+    }
+
+    .top_corner {
+        border-radius: 40px 1px 1px 1px;
+        margin-top: 20px;
+    }
+
+    .reviews__content_item_client-wrapper {
+        padding-left: 20px;
+    }
+
+    .reviews_container {
+        padding: 30px 0 30px;
+    }
+}

@@ -94,3 +94,9 @@
     width: 123px;
     height: 50px;
 }
+
+@media (max-width: 410px) {
+    .middle_icon_wrapper {
+        display: none;
+    }
+}
