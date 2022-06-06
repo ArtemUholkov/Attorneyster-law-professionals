@@ -92,6 +92,13 @@ myBut.on("click", function () {
 // console.log(myBut.parent().parent().children(".explore_content_text-part").children("h3"));
 
 
-$(".close, .modal").on("click", function () {
-    $(".modal").fadeOut();
+$(".close, .modal").on("click", function (event) {
+    if (event.target.classList.contains("modal") || event.target.classList.contains("close")) {
+        $(".modal").fadeOut();
+        console.log(event.target);
+    }
+    // console.log($(".modal"));
+    // console.log($(".modal-content").html());
+
+
 });
