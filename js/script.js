@@ -65,6 +65,14 @@ if (window.innerWidth >= 860) {
             }, 20);
         });
     });
+    worker.forEach(function (e) {
+        e.addEventListener("mouseleave", () => {
+            links.forEach(elem => {
+                elem.classList.remove('active');
+                elem.classList.remove('opacity');
+            });
+        });
+    });
 }
 else {
     links.forEach(elem => {
@@ -73,3 +81,17 @@ else {
 
     });
 }
+
+
+const myBut = $(".explore_button");
+console.log(myBut);
+myBut.on("click", function () {
+    $(".modal").fadeIn();
+    $(".modal-text").html($(this).parent().parent().children(".explore_content_text-part").children("h3, .explore_item_sub_text").clone());
+});
+// console.log(myBut.parent().parent().children(".explore_content_text-part").children("h3"));
+
+
+$(".close, .modal").on("click", function () {
+    $(".modal").fadeOut();
+});

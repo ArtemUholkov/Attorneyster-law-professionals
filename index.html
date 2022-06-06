@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -168,11 +169,12 @@
                 insurance defense, insurance coverage, bad faith, insurance fraud and criminal litigation.</span>
         </div>
         <div class="explore__content-block">
-            <div class="explore__content-block_item">
+            <div class="explore__content-block_item" id="item">
                 <div class="explore__content_wrapper">
                     <div class="explore_content_text-part">
-                        <h3>Business Law</h3>
-                        <span class="sub_text explore_item_sub_text">Be aware of new developments, as laws and rules
+                        <h3 id="title">Business Law</h3>
+                        <span class="sub_text explore_item_sub_text" id="description">Be aware of new developments, as
+                            laws and rules
                             often change based on the
                             situation.</span>
                     </div>
@@ -181,15 +183,16 @@
                         <div class="explore_icon_wrapper">
                             <img src="img/explore/case-icon.png" alt="" class="explore_icon">
                         </div>
-                        <button class="button explore_button">View more</button>
+                        <button class="button explore_button" id="myBtn">View more</button>
                     </div>
                 </div>
             </div>
-            <div class="explore__content-block_item">
+            <div class="explore__content-block_item" id="item">
                 <div class="explore__content_wrapper">
                     <div class="explore_content_text-part">
-                        <h3>Construction Law</h3>
-                        <span class="sub_text explore_item_sub_text">Never judge, just listen and advise. Even if
+                        <h3 id="title">Construction Law</h3>
+                        <span class="sub_text explore_item_sub_text" id="description">Never judge, just listen and
+                            advise. Even if
                             your
                             client has made a bad
                             decision in the case.</span>
@@ -198,15 +201,16 @@
                         <div class="explore_icon_wrapper">
                             <img src="img/explore/building-icon.png" alt="" class="explore_icon">
                         </div>
-                        <button class="button explore_button">View more</button>
+                        <button class="button explore_button" id="myBtn">View more</button>
                     </div>
                 </div>
             </div>
-            <div class="explore__content-block_item">
+            <div class="explore__content-block_item" id="item">
                 <div class="explore__content_wrapper">
                     <div class="explore_content_text-part">
-                        <h3>Car Accident</h3>
-                        <span class="sub_text explore_item_sub_text">Being untruthful will get you nowhere and give
+                        <h3 id="title">Car Accident</h3>
+                        <span class="sub_text explore_item_sub_text" id="description">Being untruthful will get you
+                            nowhere and give
                             you
                             a reputation of the
                             dishonesty in law.</span>
@@ -215,15 +219,16 @@
                         <div class="explore_icon_wrapper">
                             <img src="img/explore/car-icon.png" alt="" class="explore_icon">
                         </div>
-                        <button class="button explore_button">View more</button>
+                        <button class="button explore_button" id="myBtn">View more</button>
                     </div>
                 </div>
             </div>
-            <div class="explore__content-block_item">
+            <div class="explore__content-block_item" id="item">
                 <div class="explore__content_wrapper">
                     <div class="explore_content_text-part">
-                        <h3>Wrongful Death</h3>
-                        <span class="sub_text explore_item_sub_text">Keep yourself up-to-date on your area of law.
+                        <h3 id="title">Wrongful Death</h3>
+                        <span class="sub_text explore_item_sub_text" id="description">Keep yourself up-to-date on your
+                            area of law.
                             Be
                             aware of new justice, as
                             laws and rules.</span>
@@ -232,15 +237,16 @@
                         <div class="explore_icon_wrapper">
                             <img src="img/explore/rip-icon.png" alt="" class="explore_icon">
                         </div>
-                        <button class="button explore_button">View more</button>
+                        <button class="button explore_button" id="myBtn">View more</button>
                     </div>
                 </div>
             </div>
-            <div class="explore__content-block_item">
+            <div class="explore__content-block_item" id="item">
                 <div class="explore__content_wrapper">
                     <div class="explore_content_text-part">
-                        <h3>Criminal Law</h3>
-                        <span class="sub_text explore_item_sub_text">Our attorneys are fully committed to providing
+                        <h3 id="title">Criminal Law</h3>
+                        <span class="sub_text explore_item_sub_text" id="description">Our attorneys are fully committed
+                            to providing
                             you
                             with the support and
                             attention that you deserve.</span>
@@ -249,15 +255,16 @@
                         <div class="explore_icon_wrapper">
                             <img src="img/explore/law-icon.png" alt="" class="explore_icon">
                         </div>
-                        <button class="button explore_button">View more</button>
+                        <button class="button explore_button" id="myBtn">View more</button>
                     </div>
                 </div>
             </div>
-            <div class="explore__content-block_item">
+            <div class="explore__content-block_item" id="item">
                 <div class="explore__content_wrapper">
                     <div class="explore_content_text-part">
-                        <h3>Family Law</h3>
-                        <span class="sub_text explore_item_sub_text">You may find yourself unable to work or
+                        <h3 id="title">Family Law</h3>
+                        <span class="sub_text explore_item_sub_text" id="description">You may find yourself unable to
+                            work or
                             complete
                             work-related
                             responsibilities safely.</span>
@@ -266,11 +273,22 @@
                         <div class="explore_icon_wrapper">
                             <img src="img/explore/people-icon.png" alt="" class="explore_icon">
                         </div>
-                        <button class="button explore_button">View more</button>
+                        <button class="button explore_button" id="myBtn">
+                            View more
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p class="modal-text"></p>
+        </div>
+
     </div>
 </section>
 <section class="partners">
@@ -583,8 +601,9 @@
         </div>
     </div>
 </section>
-<script src="js/script.js"></script>
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper(".mySwiper", {
@@ -617,7 +636,8 @@
     });
 
 </script>
-
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
