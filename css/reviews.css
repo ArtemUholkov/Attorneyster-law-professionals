@@ -28,6 +28,10 @@
     gap: 30px;
 }
 
+.reviews__content_item:nth-of-type(even) {
+    flex-direction: column-reverse;
+}
+
 .reviews__content_item {
     display: flex;
     flex-direction: column;
