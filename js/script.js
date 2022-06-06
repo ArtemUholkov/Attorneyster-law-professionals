@@ -84,7 +84,7 @@ else {
 
 
 const myBut = $(".explore_button");
-console.log(myBut);
+// console.log(myBut);
 myBut.on("click", function () {
     $(".modal").fadeIn();
     $(".modal-text").html($(this).parent().parent().children(".explore_content_text-part").children("h3, .explore_item_sub_text").clone());
@@ -95,10 +95,22 @@ myBut.on("click", function () {
 $(".close, .modal").on("click", function (event) {
     if (event.target.classList.contains("modal") || event.target.classList.contains("close")) {
         $(".modal").fadeOut();
-        console.log(event.target);
+        // console.log(event.target);
     }
     // console.log($(".modal"));
     // console.log($(".modal-content").html());
 
 
 });
+const smallModal = document.querySelector(".small_test_modal");
+$(".copy_button").on("click", function () {
+    navigator.clipboard.writeText($(this).parent().children(".modal-text").children(".explore_item_sub_text").text());
+    // console.log($(".copy_button").parent().children(".modal-text").children(".explore_item_sub_text").text());
+    smallModal.classList.add("small_test_modal_active");
+    setTimeout(() => {
+        smallModal.classList.remove("small_test_modal_active");
+
+    }, 1000);
+});
+// console.log($(".copy_button").parent().children(".modal-text").children(".explore_item_sub_text").text());
+// .children(".explore_item_sub_text").innerText)

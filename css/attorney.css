@@ -181,3 +181,32 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.copy_button {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 3px;
+    border-radius: 7px;
+    display: inline;
+    border: 0;
+}
+
+.copy_button:hover {
+    background-color: var(--main-style-color);
+    cursor: pointer;
+
+}
+
+.small_test_modal {
+    display: none;
+    width: 70px;
+    height: 19px;
+    border-radius: 10px;
+    background-color: var(--main-style-color);
+    color: white;
+    text-align: center;
+}
+
+.small_test_modal_active {
+    display: inline-block;
+}
