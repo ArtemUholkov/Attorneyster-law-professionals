@@ -1,0 +1,144 @@
+.register {
+    background-image: url("../img/register/register-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.register_container {
+    padding: 140px 0;
+}
+
+.register-form {
+    background-color: var(--sub-dark-bg-color);
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 46px;
+}
+
+.input-container {
+    height: 80px;
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.form-sub-wrapper {
+    width: calc(50% - 40px);
+}
+
+
+
+.input {
+    background-color: var(--sub-dark-bg-color);
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 25px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+    border-bottom: 1px solid #3B434E;
+}
+
+.textarea {
+    overflow: hidden;
+    resize: none;
+}
+
+.message-margin {
+    margin-bottom: 40px;
+}
+
+.input:focus~.cut,
+.input:not(:placeholder-shown)~.cut {
+    transform: translateY(8px);
+}
+
+.placeholder {
+    color: #FFFFFF;
+    font-family: 'Outfit';
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 40px;
+    font-size: 25px;
+}
+
+.reg_text {
+    font-family: 'Outfit';
+    font-size: 25px;
+    line-height: 22px;
+    color: #FFFFFF;
+    align-self: flex-start;
+    padding: 80px 0 0 20px;
+}
+
+.input:focus~.placeholder,
+.input:not(:placeholder-shown)~.placeholder {
+    transform: translateY(-40px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown)~.placeholder {
+    color: #808097;
+}
+
+.input:focus~.placeholder {
+    color: #dc2f55;
+}
+
+.register_button {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 22px;
+    color: var(--sub-bg-color);
+    padding: 32px 30px;
+    margin-bottom: 105px;
+}
+
+.register_button:hover {
+    cursor: pointer;
+    background-color: var(--main-style-color);
+    color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+    .register-form {
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width: 690px) {
+    .register-form {
+        padding: 20px 20px;
+    }
+
+    .form_wrapper {
+        flex-direction: column;
+    }
+
+    .form-sub-wrapper {
+        width: 100%;
+    }
+
+    .register_button {
+        margin-bottom: 50px;
+    }
+
+    .form_wrapper {
+        gap: 0;
+    }
+}
