@@ -28,6 +28,14 @@
     gap: 30px;
 }
 
+.border-bottom-red {
+    border-bottom: 1px solid rgb(255, 0, 0);
+}
+
+.border-bottom-green {
+    border-bottom: 1px solid rgb(0, 255, 0);
+}
+
 .reviews__content_item:nth-of-type(even) {
     flex-direction: column-reverse;
 }

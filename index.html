@@ -605,34 +605,37 @@
 </section>
 <section class="register">
     <div class="container register_container">
-        <form action="submit" class="register-form">
+        <form action="#" class="register-form" id="form" name="form">
             <div class="form_wrapper">
                 <div class="form-sub-wrapper">
                     <div class="input-container">
-                        <input id="firstname" class="input" type="text" placeholder=" " />
-                        <label for="firstname" class="placeholder">Full name*</label>
+                        <input id="name" name="name" data-reg="\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+" class="input" type="text"
+                            placeholder=" " />
+                        <label for="name" class="placeholder">Full name*</label>
                     </div>
                     <div class="input-container">
-                        <input id="lastname" class="input" type="text" placeholder=" " />
-                        <label for="lastname" class="placeholder">Phone Number</label>
+                        <input id="phone" name="phone" data-reg="\b[\+]?[(]?[0-9]{2,6}[)]?[-\s\.]?[-\s\/\.0-9]{3,15}\b"
+                            class="input" type="text" placeholder=" " />
+                        <label for="phone" class="placeholder">Phone Number</label>
                     </div>
                 </div>
                 <div class="form-sub-wrapper">
                     <div class="input-container">
-                        <input id="email" class="input" type="text" placeholder=" " />
+                        <input id="email" name="email" data-reg="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" class="input"
+                            type="text" placeholder=" " />
                         <label for="email" class="placeholder">Email Adress*</label>
                     </div>
                     <div class="input-container">
-                        <input id="email" class="input" type="text" placeholder=" " />
-                        <label for="email" class="placeholder">Subject</label>
+                        <input id="subject" class="input" type="text" maxlength="20" placeholder=" " />
+                        <label for="subject" class="placeholder">Subject</label>
                     </div>
                 </div>
             </div>
             <span class="reg_text">Your Message</span>
             <div class="input-container message-margin">
-                <textarea id="email" class="input textarea" type="text" placeholder=" "></textarea>
+                <textarea id="message" class="input textarea" type="text" placeholder=" "></textarea>
             </div>
-            <button type="text" class="button register_button">Get an Appointment</button>
+            <input type="submit" class="button register_button" id="button" name="button" value="Get an Appointment">
         </form>
     </div>
 </section>

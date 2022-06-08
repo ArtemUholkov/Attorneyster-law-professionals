@@ -114,3 +114,54 @@ $(".copy_button").on("click", function () {
 });
 // console.log($(".copy_button").parent().children(".modal-text").children(".explore_item_sub_text").text());
 // .children(".explore_item_sub_text").innerText)
+
+const form = document.forms["form"];
+const formButton = form.elements["button"];
+
+const inputArr = Array.from(form);
+const validInputArr = [];
+
+inputArr.forEach((el) => {
+    if (el.hasAttribute("data-reg")) {
+        el.setAttribute("is-valid", "0");
+        validInputArr.push(el);
+        console.log(validInputArr);
+    }
+});
+
+form.addEventListener("input", inputHandler);
+button.addEventListener("click", buttonHandler);
+
+function inputHandler({ target }) {
+    if (target.hasAttribute("data-reg")) {
+        inputCheck(target);
+    }
+}
+
+function inputCheck(el) {
+    const inputValue = el.value;
+    const inputReg = el.getAttribute("data-reg");
+    const reg = new RegExp(inputReg);
+    if (reg.test(inputValue)) {
+        el.style.borderBottom = "1px solid rgb(0, 255, 0)";
+        el.setAttribute("is-valid", "1");
+    } else {
+        el.style.borderBottom = "1px solid rgb(255, 0, 0)";
+        el.setAttribute("is-valid", "0");
+    }
+
+}
+
+function buttonHandler(e) {
+    const isAllValid = [];
+
+    validInputArr.forEach((el) => {
+        isAllValid.push(el.getAttribute("is-valid"));
+    });
+
+
+    if (!(isAllValid[0] == 1 && isAllValid[1] == 1 && isAllValid[2] == 1)) {
+        e.preventDefault();
+    }
+}
+
