@@ -117,6 +117,7 @@ $(".copy_button").on("click", function () {
 
 const form = document.forms["form"];
 const formButton = form.elements["button"];
+const regBut = document.querySelector('#button');
 
 const inputArr = Array.from(form);
 const validInputArr = [];
@@ -130,13 +131,17 @@ inputArr.forEach((el) => {
 });
 
 form.addEventListener("input", inputHandler);
+// form.addEventListener('input', checkFunc);
 button.addEventListener("click", buttonHandler);
 
 function inputHandler({ target }) {
     if (target.hasAttribute("data-reg")) {
         inputCheck(target);
     }
+    checker2000();
 }
+let counter = 0;
+const inArr = document.querySelectorAll('.check');
 
 function inputCheck(el) {
     const inputValue = el.value;
@@ -152,6 +157,16 @@ function inputCheck(el) {
 
 }
 
+function checker2000() {
+
+    if (inArr[0].getAttribute('is-valid') == 1 && inArr[1].getAttribute('is-valid') == 1 && inArr[2].getAttribute('is-valid') == 1) {
+        regBut.classList.add('data-in');
+    }
+    else {
+        regBut.classList.remove('data-in');
+    }
+}
+
 function buttonHandler(e) {
     const isAllValid = [];
 
@@ -162,6 +177,9 @@ function buttonHandler(e) {
 
     if (!(isAllValid[0] == 1 && isAllValid[1] == 1 && isAllValid[2] == 1)) {
         e.preventDefault();
+    }
+    else {
+        regBut.classList.add('data-in');
     }
 }
 
