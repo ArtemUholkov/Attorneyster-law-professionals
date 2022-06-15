@@ -148,4 +148,37 @@ body {
     margin: 0 auto;
 }
 
+.sub_text {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.4px;
+    color: var(--usual-sub-text-color);
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 58px;
+    letter-spacing: 0.4px;
+    color: var(--usual-decorations);
+    padding-bottom: 11px;
+}
+
+.button {
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    line-height: 35px;
+    letter-spacing: 0.4px;
+    transition: all 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 610px) {
+    h2 {
+        font-size: 35px;
+    }
+}
+
 /*COMMONT STYLES END*/

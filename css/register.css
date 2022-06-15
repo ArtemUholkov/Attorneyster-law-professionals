@@ -102,11 +102,11 @@
 }
 
 .input:not(:placeholder-shown)~.placeholder {
-    color: #808097;
+    color: var(--main-style-color);
 }
 
 .input:focus~.placeholder {
-    color: #dc2f55;
+    color: var(--main-style-color);
 }
 
 .register_button {

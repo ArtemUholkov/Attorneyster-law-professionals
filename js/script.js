@@ -115,6 +115,8 @@ $(".copy_button").on("click", function () {
 // console.log($(".copy_button").parent().children(".modal-text").children(".explore_item_sub_text").text());
 // .children(".explore_item_sub_text").innerText)
 
+
+
 const form = document.forms["form"];
 const formButton = form.elements["button"];
 const regBut = document.querySelector('#button');
@@ -148,10 +150,10 @@ function inputCheck(el) {
     const inputReg = el.getAttribute("data-reg");
     const reg = new RegExp(inputReg);
     if (reg.test(inputValue)) {
-        el.style.borderBottom = "1px solid rgb(0, 255, 0)";
+        el.style.borderBottom = "1px solid rgb(40, 110, 40)";
         el.setAttribute("is-valid", "1");
     } else {
-        el.style.borderBottom = "1px solid rgb(255, 0, 0)";
+        el.style.borderBottom = "1px solid rgb(160, 50, 50)";
         el.setAttribute("is-valid", "0");
     }
 

@@ -35,25 +35,8 @@
     transform: scale(1.1)
 }
 
-h2 {
-    font-family: 'Cormorant Garamond', sans-serif;
-    font-weight: 400;
-    font-size: 45px;
-    line-height: 58px;
-    letter-spacing: 0.4px;
-    color: var(--usual-decorations);
-    padding-bottom: 11px;
-}
-
 .welcome_decoration_wrapper {
     padding-bottom: 42px;
-}
-
-.sub_text {
-    font-size: 20px;
-    line-height: 32px;
-    letter-spacing: 0.4px;
-    color: var(--usual-sub-text-color);
 }
 
 .person {
@@ -154,12 +137,6 @@ h2 {
         max-height: 293px;
         width: 100%;
         height: 100%;
-    }
-}
-
-@media (max-width: 610px) {
-    h2 {
-        font-size: 35px;
     }
 }
 

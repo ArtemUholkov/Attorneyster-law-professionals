@@ -48,16 +48,6 @@ header {
 }
 
 
-.button {
-    justify-content: center;
-    text-align: center;
-    font-size: 22px;
-    line-height: 35px;
-    letter-spacing: 0.4px;
-    transition: all 0.5s;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 .header_button {
     padding: 24px 71px;
     color: var(--usual-decorations);

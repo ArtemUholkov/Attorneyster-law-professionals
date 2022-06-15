@@ -605,11 +605,11 @@
 </section>
 <section class="register">
     <div class="container register_container">
-        <form action="#" class="register-form" id="form" name="form">
+        <form action="#" class="register-form" id="form" name="form" autocomplete="off">
             <div class="form_wrapper">
                 <div class="form-sub-wrapper">
                     <div class="input-container">
-                        <input tabindex="1" id="name" name="name" data-reg="\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+"
+                        <input tabindex="1" id="name" name="name" data-reg="\b([A-ZÀ-ÿa-z][-,a-z. ']+[ ]*)+"
                             class="input check" type="text" placeholder=" " />
                         <label for="name" class="placeholder">Full name*</label>
                     </div>
@@ -736,6 +736,8 @@
         </div>
     </div>
 </footer>
+
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <!-- Initialize Swiper -->
